@@ -59,7 +59,7 @@ for i in range(number_of_simulations):
         node_random=random.choice([i for i in range(graph.number_of_nodes())])
   Approx_Rank_Vector[node_random]=Approx_Rank_Vector[node_random]+1
        
-Final_Rank_Vector=[(i/number_of_vertices) for i in Approx_Rank_Vector]
+Final_Rank_Vector=[(i/number_of_simulations) for i in Approx_Rank_Vector]
 
 print("----------------------Aproxx Final Rank vector--------------------------\n")
 print(Final_Rank_Vector)
